@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark : #202124;
+    --light : #e8eaed;
+    --white : #fff;
+    --gray :  #303134;
+    --gray-2 :  #9aa0a6;
+    --blue: #8ab4f8;
+}
+body{
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+a{
+    text-decoration: none;
+    color: var(--light);
+}
+svg{
+    color: var(--light);
+}
+.cap{
+    text-transform: capitalize;
+}
+.content{
+    /* height: 90vh;  */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+/*Start Of NavBar*/
+nav{
+    margin: 10px 20px 0;
+}
+.content nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    height: 100%;
+    font-size: 0.8em;
+    
+    
+}
+.content nav ul li{
+    display: flex; /* make each flex item a flex container, as well */
+    align-items: center; /* center text vertically (in this case) */
+    justify-content: center;  /* center text horizontally (in this case) */
+    min-height: 40px;
+    min-width: 40px;
+    text-align: center;
+}
+.content nav ul li:hover{
+    text-decoration: underline;
+}
+.content nav ul li a img{
+    height: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.content nav ul li:nth-child(3):hover,.content nav ul li:nth-child(4):hover{
+    background: var(--gray);
+    border-radius: 50%;
+}
+/*End Of NavBar*/
+
+/*Start Of Search Area*/
+.search-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 200px;
+}
+.search-area .logo{
+    margin-bottom: 25px;
+}
+.search-area .search-box{
+    border: 2px solid var(--gray);
+    width: 580px;
+    height: 45px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    
+}
+.search-area form .search-box:hover{
+    background-color: var(--gray);
+    
+}
+.search-area form .search-box input[type="text"]{
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   border: none;
+   color: var(--light);
+   padding: 0 15px;
+   font-size: 1em;
+}
+.search-area .search-box input:focus{
+    outline: none;
+}
+.search-area .search-box img{
+    cursor: pointer;
+    position: relative;
+}
+
+.search-area .btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.search-area .btns input[type="button"]{
+    font-size: 0.9em;
+    background-color: var(--gray);
+    color: var(--light);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+    
+}
+.search-area .btns input[type="button"]:hover{
+    outline: 1px solid var(--gray-2);
+   
+}
+.search-area .lang{
+    margin-top: 25px;
+}
+.search-area .lang span,.search-area .lang a{
+    font-size: small;
+}
+.search-area .lang a{
+    color: var(--blue);
+    margin: 0 5px;
+}
+.search-area .lang a:hover{
+    text-decoration: underline;
+}
+/*End Of Search Area*/
+
+/*Start Of Footer*/
+footer{
+    width: 100%;
+    background-color: #000;
+    bottom: 0;
+    color: var(--gray-2);
+    position: absolute;
+    bottom: 0;
+}
+footer div:first-child{
+    border-bottom: 1px solid var(--gray-2);
+    width: 100%;
+    padding: 15px;
+}
+footer div:nth-child(2){
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 25px;
+    font-size: 0.9em;
+}
+footer div:nth-child(2) a{
+    color: var(--gray-2);
+}
+footer div:nth-child(2) a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*End Of Footer*/
